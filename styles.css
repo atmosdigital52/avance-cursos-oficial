@@ -177,6 +177,7 @@ nav {
 
 .header__image {
   position: relative;
+  perspective: 1000px;
 }
 
 .header__image::before {
@@ -196,7 +197,8 @@ nav {
 .header__image img {
   max-width: 350px;
   margin: auto;
-  animation: floating 3s ease-in-out infinite;
+  animation: floating-e-rotation 3s ease-in-out infinite;
+  transform-origin: center;
 }
 
 .explore__header {

@@ -2,11 +2,11 @@
 ass: Houston Braga hehe
 */
 
-@keyframes floating {
+@keyframes floating-e-rotation {
     0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-30px);
-      }
-}
+      transform: translateY(0) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotateY(15deg);
+    }
+  }
