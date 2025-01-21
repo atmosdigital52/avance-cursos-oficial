@@ -1,0 +1,12 @@
+/*Aqui esta a animação de flutuação do primeiro astronauta
+ass: Houston Braga hehe
+*/
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+}
