@@ -522,6 +522,20 @@ nav {
   height:32px;
 }
 
+.footer__bar a {
+  display: flex;
+  align-items: center;
+  transition: filter 3s ease;
+}
+
+.footer__bar a:hover .logo-atmos{
+  filter: grayscale(1) brightness(0.5);
+}
+
+.footer__bar a:hover span {
+  color: #797972;
+}
+
 @media (width < 900px) {
   .nav__links {
     display: none;
