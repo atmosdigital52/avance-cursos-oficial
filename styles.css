@@ -504,8 +504,22 @@ nav {
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
-  font-size: 0.8rem;
-  color: var(--white);
+  font-size: 0.9rem;
+  color: var(--primary-color-light);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer__bar span {
+  color: #060606;
+  font-weight: 500;
+}
+
+.logo-atmos {
+  filter: invert(1);
+  width: 32px;
+  height:32px;
 }
 
 @media (width < 900px) {
