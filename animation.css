@@ -10,3 +10,14 @@ ass: Houston Braga hehe
       transform: translateY(-15px) rotateY(15deg);
     }
   }
+
+
+/*Animacao do triangulo abaixo do formulario*/
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}

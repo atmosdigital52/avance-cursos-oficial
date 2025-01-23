@@ -290,28 +290,31 @@ nav {
   align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  width: 100%;
 }
 
 /* From Uiverse.io by ammarsaa */ 
-.div-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  padding:120px 220px;
-}
+
 
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  width: 1200px;
-  
+  width: 100vw;
   border-radius: 10px;
   position: relative;
   background-color: var(--primary-color-light);
   color: #fff;
-  border: 1px solid #333;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1000px;
+  padding: 120px;
 }
 
 .title {
@@ -441,6 +444,18 @@ nav {
     transform: scale(1.8);
     opacity: 0;
   }
+}
+
+.triangle__form {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent; /* Metade da base */
+  border-right: 50px solid transparent; /* Metade da base */
+  border-top: 86.6px solid var(--primary-color-light);
+  border-bottom: 0;
+  transform: rotate(180deg);
+  margin-bottom: 2px;
+  animation: jump 2s ease-in-out infinite;
 }
 
 .class__container {
@@ -605,9 +620,14 @@ nav {
 
 .footer__container {
   position: relative;
-  display: grid;
-  grid-template-columns: 400px repeat(3, 1fr);
   gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__col {
+  max-width: 700px;
 }
 
 .footer__blur {
