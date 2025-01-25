@@ -603,6 +603,12 @@ nav {
   max-width: 700px;
 }
 
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 .footer__blur {
   bottom: 0;
   right: 0;
@@ -646,7 +652,8 @@ nav {
 }
 
 .footer__col > a {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
   color: black;
   transition: 0.3s;
@@ -664,6 +671,7 @@ nav {
   color: var(--primary-color-light);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 
