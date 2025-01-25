@@ -350,24 +350,6 @@ nav {
   background-color: coral;
 }
 
-.message, 
-.signin {
-  font-size: 14.5px;
-  color: var(--secondary-color-dark);
-}
-
-.signin {
-  text-align: center;
-}
-
-.signin a:hover {
-  text-decoration: underline var(--secondary-color-dark);
-}
-
-.signin a {
-  color: coral;
-}
-
 .flex {
   display: flex;
   width: 100%;
@@ -415,6 +397,7 @@ nav {
   font-size: medium;
 }
 
+
 .submit {
   border: none;
   outline: none;
@@ -434,17 +417,7 @@ nav {
   background-color: var(--secondary-color-dark);
 }
 
-@keyframes pulse {
-  from {
-    transform: scale(0.9);
-    opacity: 1;
-  }
 
-  to {
-    transform: scale(1.8);
-    opacity: 0;
-  }
-}
 
 .triangle__form {
   width: 0;

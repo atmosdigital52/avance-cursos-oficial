@@ -21,3 +21,15 @@ ass: Houston Braga hehe
     transform: translateY(-30px);
   }
 }
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
