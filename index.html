@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="animation.css">
+    
    
     <title>Avance Cursos | FORMAÇÃO PROFISSIONAL</title>
   </head>
@@ -17,7 +18,7 @@
       <div class="nav__logo">
         <a href="#"><img src="assets/logo.png" alt="logo" /></a>
       </div>
-      <ul class="nav__links show">
+      <ul class="nav__links">
         <li class="link"><a href="#">Início</a></li>
         <li class="link"><a href="#">Cursos</a></li>
         <li class="link"><a href="#">Palmares-PE</a></li>
@@ -25,14 +26,25 @@
         <li class="link"><a href="#">Vitoria de Santo Antão-PE</a></li>
       </ul>
 
-      <label class="hamburger hidden">
-        <input type="checkbox">
-        <svg viewBox="0 0 32 32">
-          <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-          <path class="line" d="M7 16 27 16"></path>
-        </svg>
-      </label>
-    </nav>
+      <div class="div__mobile">
+        <label class="hamburger hidden" for="menu-toggle">
+          <input type="checkbox" id="menu-toggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+  
+        <ul class="nav__links__mobile hidden">
+          <li class="link"><img src="assets/house (1).svg" alt=""><a href="#">Início</a></li>
+          <li class="link"><img src="assets/book-open-text.svg" alt=""><a href="#">Cursos</a></li>
+          <li class="link"><img src="assets/building-2.svg" alt=""><a href="#">Palmares-PE</a></li>
+          <li class="link"><img src="assets/building-2.svg" alt=""><a href="#">Escada-PE</a></li>
+          <li class="link"><img src="assets/building-2.svg" alt=""><a href="#">Vitoria de Santo Antão-PE</a></li>
+        </ul>
+      </nav>
+      </div>
+      
 
     <header class="section__container header__container">
       <div class="header__content">
@@ -56,8 +68,6 @@
       <div class="explore__header">
         <h2 class="section__header">EXPLORE NOSSAS ÁREAS</h2>
         <div class="explore__nav">
-          <span><i class="ri-arrow-left-line"></i></span>
-          <span><i class="ri-arrow-right-line"></i></span>
         </div>
       </div>
       <div class="explore__grid">
@@ -318,8 +328,8 @@
       
     </div>
 
-   
+    <script src="script/mobile-menu.js"></script>
     <script src="script/form.js"></script>
-   
+    
   </body>
 </html>
