@@ -1,0 +1,1 @@
+//aqui esta o arquivo meu gay! comeca esta porra ai
