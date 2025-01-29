@@ -102,45 +102,45 @@
     </section>
     <!--SECTION DE FORMULARIO-->
     <section class="section__form">
-      <form class="form">
+      <form action="https://api.sheetmonkey.io/form/itc5r1soZ3UP2AeTdXhzYG" method="post" class="form">
         <div class="div-form">
           <p class="title">Entre em contato conosco!</p>
         <p class="message"></p>
     
         <div class="flex">
           <label>
-            <input class="input" type="text" placeholder="" required>
+            <input class="input" type="text" name="NOME" placeholder="" required>
             <span>Nome</span>
           </label>
     
           <label>
-            <input class="input" type="text" placeholder="" required>
+            <input class="input" type="text" name="SOBRENOME" placeholder="" required>
             <span>Sobrenome</span>
           </label>
         </div>  
     
         <label>
-          <input class="input" type="tel" placeholder="" required>
+          <input class="input" type="tel" name="TELEFONE" placeholder="" required>
           <span>Telefone</span>
         </label>
 
         <label>
-          <select class="input" required>
+          <select class="input" name="CIDADE" required>
             <option class="option-title" value="" disabled selected>Selecione a cidade</span></option>
-            <option value="cidade1">Palmares-PE</option>
-            <option value="cidade2">Escada-PE</option>
-            <option value="cidade3">Vitoria de Santo Antão-PE</option>
+            <option value="Palmares-PE">Palmares-PE</option>
+            <option value="Escada-PE">Escada-PE</option>
+            <option value="Vitoria de Santo Antão-PE">Vitoria de Santo Antão-PE</option>
           </select>
           <span>Cidade(presencial)</span>
         </label>
     
         <label>
-          <select class="input" required>
+          <select class="input" name="CURSO" required>
             <option value="" disabled selected>Selecione um curso</option>
-            <option value="curso1">Marketing</option>
-            <option value="curso2">Farmácia</option>
-            <option value="curso3">Administração</option>
-            <option value="curso4">Informática</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Farmácia">Farmácia</option>
+            <option value="Administração">Administração</option>
+            <option value="Farmácia">Informática</option>
           </select>
           <span>Curso</span>
         </label>
@@ -148,7 +148,7 @@
         <button class="submit">Enviar</button>
         <p class="signin">Aguarde por contato de nossa equipe.</p>
         </div>
-        
+        <script src="./form.js" ></script>
       </form>
       <div class="triangle__form">
 
