@@ -1,1 +1,10 @@
-//aqui esta o arquivo meu gay! comeca esta porra ai
+document.addEventListener('DOMContentLoaded', function () {
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Impede o envio do formulário
+
+        console.log('Formulário enviado');
+        alert('Enviando formulário...');
+    }
+
+    document.querySelector('form').addEventListener('submit', handleSubmit);
+});
