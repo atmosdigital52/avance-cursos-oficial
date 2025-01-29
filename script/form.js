@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault(); // Impede o envio do formulário
 
         console.log('Formulário enviado');
-        alert('Enviando formulário...');
+        alert('Formulário enviado!');
     }
 
     document.querySelector('form').addEventListener('submit', handleSubmit);
