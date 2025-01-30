@@ -156,6 +156,17 @@ nav {
   
 }
 
+.nav__links .link {
+  display: flex;
+  
+}
+
+.nav__links img {
+  width: 20px;
+  margin-bottom: 5px;
+  padding-right: 2px;
+}
+
 .nav__links {
   list-style: none;
   display: flex;

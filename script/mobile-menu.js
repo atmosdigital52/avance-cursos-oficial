@@ -4,6 +4,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuToggle.addEventListener("change", function () {
         mobileMenu.style.display = menuToggle.checked ? "flex" : "none";
-        console.log('funcionou')
     });
 });
