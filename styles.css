@@ -523,7 +523,6 @@ nav {
   border-right: 50px solid transparent; /* Metade da base */
   border-top: 86.6px solid var(--primary-color-light);
   border-bottom: 0;
-  transform: rotate(180deg);
   animation: jump 2s ease-in-out infinite;
 }
 
