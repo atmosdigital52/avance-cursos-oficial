@@ -572,8 +572,28 @@ nav {
   position: relative;
 }
 
-.join__image img {
+.slider {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slider__container {
+  display: flex;
+  transition: 0.7s ease-in-out;
+  transform: translateX(0);
+}
+
+.slide img {
+  width: 100%;
   border-radius: 10px;
+  max-height: 600px;
+  display: block;
 }
 
 .join__grid {
