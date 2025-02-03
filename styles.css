@@ -377,7 +377,69 @@ nav {
 
 /*FORMULARIO*/
 
+/*marcas de agua da sessao form*/
+
+.mark {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0.15;
+}
+
+.mark-asteroide {
+  top: 100px;
+  right: 110px;
+}
+
+.mark-astronaut {
+  bottom: 30px;
+  left: 40px;
+}
+
+.mark-astronaut-2 {
+  top: 300px;
+  left: 230px;
+}
+
+.mark-cometa {
+  top: 200px;
+  right: 340px;
+}
+
+.mark-stars {
+  bottom: 30px;
+  right: 400px;
+}
+
+.mark-rocket {
+  top: 60px;
+  left: 500px;
+}
+
+.mark-galaxy {
+  top: 30px;
+  left: 50px;
+}
+
+.mark-moon {
+  bottom: 50px;
+  left: 550px;
+}
+
+.mark-planet {
+  top: 20px;
+  right: 600px;
+}
+
+.mark-satelit {
+  top: 50%;
+  right: 40px;
+}
+
+
+
 .section__form {
+  background-color: var(--primary-color-light);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -396,6 +458,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 10px;
   width: 100vw;
   border-radius: 10px;
