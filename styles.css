@@ -416,6 +416,11 @@ nav {
   left: 500px;
 }
 
+.mark-rocket-review {
+  bottom: 150px;
+  right: 700px;
+}
+
 .mark-galaxy {
   top: 30px;
   left: 50px;
@@ -424,6 +429,11 @@ nav {
 .mark-moon {
   bottom: 50px;
   left: 550px;
+}
+
+.mark-moon-review {
+  bottom: 25px;
+  left: 800px;
 }
 
 .mark-planet {
@@ -699,6 +709,7 @@ nav {
 
 .review {
   background-color: var(--primary-color-light);
+  position: relative;
 }
 
 .review__container {
@@ -755,6 +766,7 @@ nav {
 
 .review__member__details h4 {
   margin-bottom: 0;
+  
 }
 
 .review__nav {
@@ -880,111 +892,4 @@ nav {
 
 
 
-@media (max-width: 970px) {
-  nav {
-    align-items: flex-start;
-  }
 
-  .nav__links__mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .div__mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .nav__links {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  #menu-toggle:checked ~ .nav__links__mobile {
-    display: flex;
-}
-
-  .header__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .header__image {
-    transform: scale(0.7);
-    position: absolute;
-    bottom: -300px;
-    right: 0;
-  }
-
-  .explore__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .class__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .class__image {
-    min-height: 500px;
-  }
-
-  .price__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .review__container {
-    gap: 2rem;
-  }
-
-  .footer__container {
-    grid-template-columns: 1fr 200px;
-  }
-}
-
-
-
-
-
-@media (max-width: 600px) {
-  .explore__header {
-    flex-direction: column;
-  }
-
-  .explore__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .join__container {
-    margin-bottom: 15rem;
-  }
-
-  .join__grid {
-    width: 100%;
-    margin: 0;
-    bottom: -20rem;
-  }
-
-  .review__container {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .review__footer {
-    flex-direction: column;
-  }
-
-  .footer__container {
-    grid-template-columns: 1fr 150px;
-  }
-
-  .footer__bar {
-    text-align: center;
-  }
-}
