@@ -724,6 +724,7 @@ nav {
 .review {
   background-color: var(--primary-color-light);
   position: relative;
+  margin-top: 200px;
 }
 
 .review__container {
