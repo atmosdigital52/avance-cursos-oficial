@@ -746,7 +746,7 @@ nav {
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--secondary-color);
 }
 
 .review__content p {

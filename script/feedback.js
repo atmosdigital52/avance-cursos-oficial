@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         feedback: "Excelente curso de Administração! Os professores são muito capacitados e o conteúdo foi essencial para minha carreira. Aprendi sobre gestão, finanças e liderança, o que me ajudou a conquistar um ótimo emprego!ghifiadijwijd nisdjiawdjiwjdiaw  idjwidjaijdiaj idjwijdiajdiguuwehiwdf fhdjsjdkjskj ksdjskdj",
         name: "Mariana Souza",
         role: "Administradora",
-        image: "assets/member3.jpg",
+        image: "assets/member3.jpeg",
         rating: 5
       }
     ];
