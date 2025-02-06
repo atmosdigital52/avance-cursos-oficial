@@ -153,7 +153,19 @@
       z-index: -1000;
     }
 
+    .section__form {
+      margin-bottom: 20px;
+    }
+
     .div-form {
       padding: 120px 20px;
+    }
+
+    .explore__header {
+      gap: 0;
+    }
+
+    .class__container {
+      margin-bottom: -100px ;
     }
   }
