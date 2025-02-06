@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Erro ao enviar dados:', error);
 
             // Você pode mostrar um alerta de erro caso tenha algum problema
-            alert('Informações enviadas com sucesso! Agora é só aguardar a AVANCE CURSOS entrar em contato.');
+            alert('Ops algo deu errado!');
         });
     }
 

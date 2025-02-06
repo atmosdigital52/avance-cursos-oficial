@@ -66,8 +66,10 @@
       min-height: 500px;
     }
   
-    .price__grid {
-      grid-template-columns: repeat(2, 1fr);
+    .mark-farmacia {
+      position: absolute;
+      width: 150px;
+      bottom: -100px;
     }
   
     .review__container {
@@ -76,6 +78,24 @@
   
     .footer__container {
       grid-template-columns: 1fr 200px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer__container {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      padding: 1rem;
+    }
+  
+    .footer__links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer__col {
+      width: 100%;
     }
   }
   
@@ -126,7 +146,8 @@
     .join__grid {
       width: 100%;
       margin: 0;
-      bottom: -20rem;
+      margin-bottom: 150px;
+      bottom: -25rem;
     }
   
     .review__container {
@@ -165,7 +186,22 @@
       gap: 0;
     }
 
-    .class__container {
-      margin-bottom: -100px ;
+    .join__container {
+      margin-bottom: 25rem;
+    }
+
+    .join__grid {
+      bottom: -32rem;
+    }
+
+    .footer__bar {
+      flex-direction: column;
     }
   }
+
+@media (max-width: 375px) {
+  .join__grid {
+    bottom: -35rem;
+  }
+}
+

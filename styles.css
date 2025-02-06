@@ -21,7 +21,7 @@
   position: absolute;
   width: 200px;
   bottom: 0;
-  right: 0;
+  right: -80px;
   z-index: 1000;
   filter: drop-shadow(5px 5px 20px black);
   opacity: 1;
@@ -687,7 +687,7 @@ nav {
   bottom: -5rem;
   width: calc(100% - 4rem);
   padding: 2rem;
-  margin: 0 2rem;
+  margin: -10rem 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -724,7 +724,8 @@ nav {
 .review {
   background-color: var(--primary-color-light);
   position: relative;
-  margin-top: 200px; 
+  margin-top: 200px;
+  max-height: 800px; 
 }
 
 .review__container {
