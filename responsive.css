@@ -79,6 +79,10 @@
     .footer__container {
       grid-template-columns: 1fr 200px;
     }
+
+    .join__grid {
+      margin: -10rem 2rem;
+    }
   }
 
   @media (max-width: 768px) {
