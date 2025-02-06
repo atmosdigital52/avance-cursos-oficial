@@ -17,6 +17,16 @@
   box-sizing: border-box;
 }
 
+.mark-farmacia {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  filter: drop-shadow(5px 5px 20px black);
+  opacity: 1;
+}
+
 .nav__links__mobile .link {
   display: flex;
   align-items: center;
@@ -296,6 +306,10 @@ nav {
   transform-origin: center;
 }
 
+.section__container {
+  position: relative;
+}
+
 .explore__header {
   display: flex;
   align-items: center;
@@ -377,13 +391,85 @@ nav {
 
 /*FORMULARIO*/
 
+/*marcas de agua da sessao form*/
+
+.mark {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0.15;
+}
+
+.mark-asteroide {
+  top: 100px;
+  right: 110px;
+}
+
+.mark-astronaut {
+  bottom: 30px;
+  left: 40px;
+}
+
+.mark-astronaut-2 {
+  top: 300px;
+  left: 230px;
+}
+
+.mark-cometa {
+  top: 200px;
+  right: 340px;
+}
+
+.mark-stars {
+  bottom: 30px;
+  right: 400px;
+}
+
+.mark-rocket {
+  top: 60px;
+  left: 500px;
+}
+
+.mark-rocket-review {
+  bottom: 150px;
+  right: 700px;
+}
+
+.mark-galaxy {
+  top: 30px;
+  left: 50px;
+}
+
+.mark-moon {
+  bottom: 50px;
+  left: 550px;
+}
+
+.mark-moon-review {
+  bottom: 25px;
+  left: 800px;
+}
+
+.mark-planet {
+  top: 20px;
+  right: 600px;
+}
+
+.mark-satelit {
+  top: 50%;
+  right: 40px;
+}
+
+
+
 .section__form {
+  background-color: var(--primary-color-light);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 100px;
   width: 100%;
 }
@@ -396,6 +482,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 10px;
   width: 100vw;
   border-radius: 10px;
@@ -636,6 +723,8 @@ nav {
 
 .review {
   background-color: var(--primary-color-light);
+  position: relative;
+  margin-top: 200px; 
 }
 
 .review__container {
@@ -657,7 +746,7 @@ nav {
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--secondary-color);
 }
 
 .review__content p {
@@ -692,6 +781,7 @@ nav {
 
 .review__member__details h4 {
   margin-bottom: 0;
+  
 }
 
 .review__nav {
@@ -817,111 +907,4 @@ nav {
 
 
 
-@media (max-width: 970px) {
-  nav {
-    align-items: flex-start;
-  }
 
-  .nav__links__mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .div__mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .nav__links {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  #menu-toggle:checked ~ .nav__links__mobile {
-    display: flex;
-}
-
-  .header__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .header__image {
-    transform: scale(0.7);
-    position: absolute;
-    bottom: -300px;
-    right: 0;
-  }
-
-  .explore__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .class__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .class__image {
-    min-height: 500px;
-  }
-
-  .price__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .review__container {
-    gap: 2rem;
-  }
-
-  .footer__container {
-    grid-template-columns: 1fr 200px;
-  }
-}
-
-
-
-
-
-@media (max-width: 600px) {
-  .explore__header {
-    flex-direction: column;
-  }
-
-  .explore__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .join__container {
-    margin-bottom: 15rem;
-  }
-
-  .join__grid {
-    width: 100%;
-    margin: 0;
-    bottom: -20rem;
-  }
-
-  .review__container {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .review__footer {
-    flex-direction: column;
-  }
-
-  .footer__container {
-    grid-template-columns: 1fr 150px;
-  }
-
-  .footer__bar {
-    text-align: center;
-  }
-}
