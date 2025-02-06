@@ -35,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Se chegou aqui, é porque o envio foi bem-sucedido
             console.log('Dados enviados com sucesso:', data);
 
-            // Resetando o formulário
-            document.querySelector('form').reset();
+            
 
             // Exibindo a mensagem de sucesso
             alert('Informações enviadas com sucesso! Agora é só aguardar a AVANCE CURSOS entrar em contato.');
@@ -48,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Você pode mostrar um alerta de erro caso tenha algum problema
             alert('Ops algo deu errado!');
         });
+
+        // Resetando o formulário
+        document.querySelector('form').reset();
     }
 
     // Adiciona o evento de submissão do formulário
