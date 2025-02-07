@@ -121,9 +121,7 @@
   
   
   @media (max-width: 600px) {
-    body {
-      max-width: 600px;
-    }
+    
 
     .header__container::before {
       content: "";
@@ -183,9 +181,7 @@
   }
 
   @media (max-width: 500px) {
-    nav, .header__container, .section__form, .explore__container, .class__container, .join__container, .review, .footer__container {
-      min-width: 100%;
-    }
+    
 
     .header__image {
       transform: scale(0.5);

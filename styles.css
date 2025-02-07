@@ -126,21 +126,20 @@
   background-color: var(--secondary-color-dark);
 }
 
-img {
-  width: 100%;
-  display: flex;
-}
-
 a {
   text-decoration: none;
 }
 
-
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-color)!important;
+}
+
+html, body {
   overflow-x: hidden;
+  height: 100%; /* Garante que o body não expanda */
+  position: fixed; /* Evita o scroll em iOS */
+  width: 100%;
 }
 
 nav {
