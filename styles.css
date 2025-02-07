@@ -137,8 +137,8 @@ body {
 
 html, body {
   overflow-x: hidden;
-  height: 100%; /* Garante que o body não expanda */
   width: 100%;
+  overflow-y: auto;
 }
 
 nav {
