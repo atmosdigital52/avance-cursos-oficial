@@ -121,6 +121,10 @@
   
   
   @media (max-width: 600px) {
+    body {
+      max-width: 600px;
+    }
+
     .header__container::before {
       content: "";
     }
@@ -179,6 +183,10 @@
   }
 
   @media (max-width: 500px) {
+    body {
+      max-width: 500px;
+    }
+
     .header__image {
       transform: scale(0.5);
       z-index: -1000;
