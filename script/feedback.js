@@ -1,23 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
     const reviews = [
       {
-        feedback: "O curso de Atendente de Farmácia foi excelente! Aprendi muito sobre atendimento ao cliente, manuseio de medicamentos e ética profissional. As aulas práticas me prepararam bem para o mercado de trabalho e hoje me sinto confiante para atuar com segurança e qualidade. Recomendo a todos que buscam se destacar na área!",
-        name: "Jane Cooper",
-        role: "Atendente de Farmácia",
+        feedback: "Fazer o curso técnico de Administração na Avance Cursos foi uma experiência incrível! As aulas são  dinâmicas e voltadas para o mercado de trabalho. Consegui aplicar todos os aprendizados no meu estágio e já estou vendo os resultados! A equipe é super capacitada e pronta para ajudar. Se você busca um curso que prepara para o futuro, não perca tempo, venha para a Avance!",
+        name: "Fulano da silva",
+        role: "Curso Técnico de Administração",
         image: "assets/member.jpg",
         rating: 4.5
       },
       {
         feedback: "O curso de Informática foi transformador. A didática dos professores e o material didático me ajudaram a compreender os fundamentos da tecnologia. Hoje, estou empregado e aplico os conhecimentos adquiridos todos os dias!dshsdhjsuwuwuhuwhdhhhfhhshw hdfuhhsuhd uisdhashdh",
-        name: "Carlos Mendes",
+        name: "Beltrano Mendes",
         role: "Tecnico de TI",
         image: "assets/member2.jpg",
         rating: 5
       },
       {
-        feedback: "Excelente curso de Administração! Os professores são muito capacitados e o conteúdo foi essencial para minha carreira. Aprendi sobre gestão, finanças e liderança, o que me ajudou a conquistar um ótimo emprego!ghifiadijwijd nisdjiawdjiwjdiaw  idjwidjaijdiaj idjwijdiajdiguuwehiwdf fhdjsjdkjskj ksdjskdj",
-        name: "Mariana Souza",
-        role: "Administradora",
+        feedback: "Concluir o curso técnico de Marketing na Avance Cursos foi a melhor decisão que tomei! O conteúdo é atualizado e aplicável, o que me fez entender de verdade como o mercado funciona. A estrutura da escola é ótima com laboratórios de última geração. Se você quer se destacar no mundo do marketing, não tem lugar melhor! Super recomendo!",
+        name: "Sicrano Souza",
+        role: "Curso Técnico de Marketing",
         image: "assets/member3.jpeg",
         rating: 5
       }
