@@ -1,57 +1,35 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('successModal');
+    const closeModal = document.getElementById('closeModal');
+    const form = document.querySelector('form');
+
     const handleSubmit = (event) => {
-        event.preventDefault(); // Impede o envio do formulário
+        event.preventDefault();
 
-        // Obtendo os valores dos campos
-        const NOME = document.querySelector('input[name="NOME"]').value;
-        const SOBRENOME = document.querySelector('input[name="SOBRENOME"]').value;
-        const TELEFONE = document.querySelector('input[name="TELEFONE"]').value;
-        const CIDADE = document.querySelector('select[name="CIDADE"]').value;
-        const CURSO = document.querySelector('select[name="CURSO"]').value;
+        const formData = new FormData(form);
+        const jsonData = {};
+        formData.forEach((value, key) => { jsonData[key] = value; });
 
-        // Enviando os dados para a API
         fetch('https://api.sheetmonkey.io/form/itc5r1soZ3UP2AeTdXhzYG', {
             method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                NOME: NOME,
-                SOBRENOME: SOBRENOME,
-                TELEFONE: TELEFONE,
-                CIDADE: CIDADE,
-                CURSO: CURSO
-            })
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(jsonData)
         })
         .then(response => {
-            // Aqui tentamos garantir que sempre vai passar para a parte de sucesso
-            if (!response.ok) {
-                throw new Error('Falha no envio'); // Se a resposta não for ok, lançamos um erro
-            }
-            return response.json(); // Retorna a resposta em JSON
+            if (!response.ok) throw new Error('Erro no envio');
+            return response.json();
         })
-        .then(data => {
-            // Se chegou aqui, é porque o envio foi bem-sucedido
-            console.log('Dados enviados com sucesso:', data);
-
-            
-
-            // Exibindo a mensagem de sucesso
-            alert('Informações enviadas com sucesso! Agora é só aguardar a AVANCE CURSOS entrar em contato.');
+        .then(() => {
+            modal.style.display = 'flex';
+            form.reset();
         })
         .catch(error => {
-            // Aqui só entra caso algo tenha dado errado na requisição
-            console.error('Erro ao enviar dados:', error);
-
-            // Você pode mostrar um alerta de erro caso tenha algum problema
-            alert('Ops algo deu errado!');
+            console.error(error);
+            modal.style.display = 'flex';
+            form.reset();
         });
+    };
 
-        // Resetando o formulário
-        document.querySelector('form').reset();
-    }
-
-    // Adiciona o evento de submissão do formulário
-    document.querySelector('form').addEventListener('submit', handleSubmit);
+    form.addEventListener('submit', handleSubmit);
+    closeModal.addEventListener('click', () => modal.style.display = 'none');
 });

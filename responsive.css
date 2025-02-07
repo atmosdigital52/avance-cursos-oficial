@@ -83,6 +83,12 @@
     .join__grid {
       margin: -10rem 2rem;
     }
+
+    .mark-astronaut-modal {
+      position: absolute;
+      left: 0;
+      top: 80px;
+    }
   }
 
   @media (max-width: 768px) {
