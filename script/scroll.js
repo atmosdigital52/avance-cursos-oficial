@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Entre em contato": document.querySelector(".section__form"),
         "Palmares-PE": "Palmares-PE",
         "Escada-PE": "Escada-PE",
-        "Vitoria de Santo Antão-PE": "Vitoria de Santo Antão-PE"
+        "Vitoria de Santo Antão-PE": "Vitoria de Santo Antão-PE",
+        "Entre em contato": document.querySelector(".section__form"),
     };
 
     const formSection = document.querySelector(".section__form");
