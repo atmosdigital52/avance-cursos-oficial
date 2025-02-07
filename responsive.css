@@ -208,6 +208,11 @@
       bottom: -32rem;
     }
 
+    .review__footer {
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+
     .footer__bar {
       flex-direction: column;
     }
