@@ -239,6 +239,7 @@ nav {
   line-height: 7rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), transparent);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1; /* Mantém visível, já que a transparência está no gradiente */
   z-index: -1;
