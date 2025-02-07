@@ -137,11 +137,7 @@ a {
   text-decoration: none;
 }
 
-.bg__blur {
-  position: absolute;
-  box-shadow: 0 0 1000px 50px var(--secondary-color);
-  z-index: -1;
-}
+
 
 body {
   font-family: "Poppins", sans-serif;
