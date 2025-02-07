@@ -8,13 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         rating: 4.5
       },
       {
-        feedback: "O curso de Informática foi transformador. A didática dos professores e o material didático me ajudaram a compreender os fundamentos da tecnologia. Hoje, estou empregado e aplico os conhecimentos adquiridos todos os dias!dshsdhjsuwuwuhuwhdhhhfhhshw hdfuhhsuhd uisdhashdh",
-        name: "Diogo Mendes",
-        role: "Tecnico de TI",
-        image: "assets/member2.jpg",
-        rating: 5
-      },
-      {
         feedback: "Concluir o curso técnico de Marketing na Avance Cursos foi a melhor decisão que tomei! O conteúdo é atualizado e aplicável, o que me fez entender de verdade como o mercado funciona. A estrutura da escola é ótima com laboratórios de última geração. Se você quer se destacar no mundo do marketing, não tem lugar melhor! Super recomendo!",
         name: "Ana Souza",
         role: "Curso Técnico de Marketing",
