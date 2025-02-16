@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         feedback: "Concluir o curso técnico de Marketing na Avance Cursos foi a melhor decisão que tomei! O conteúdo é atualizado e aplicável, o que me fez entender de verdade como o mercado funciona. A estrutura da escola é ótima com laboratórios de última geração. Se você quer se destacar no mundo do marketing, não tem lugar melhor! Super recomendo!",
         name: "Ana Souza",
-        role: "Curso Profissionalizantes de Marketing",
+        role: "Curso Profissionalizante de Marketing",
         image: "assets/member3.jpeg",
         rating: 5
       }
